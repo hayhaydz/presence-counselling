@@ -1,0 +1,39 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.Layout {
+    margin: 0px 100px;
+}
+
+.Header {
+
+    &__logo {
+        height: 50px;
+        margin: 25px 0px;
+    }
+}
+
+.Landing {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+        &--heading {
+            font-family: Abril Fatface, serif;
+            font-size: 42px;
+            font-weight: 400;
+            color: #101010;
+    
+            &--highlight {
+                color: #1E3EEA;
+            }
+        }
+    }
+
+    &__right {
+
+    }
+}

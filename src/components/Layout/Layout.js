@@ -1,10 +1,13 @@
 import React from 'react'
 
-import '../../styles/global.scss'
+import '../../styles/main.scss'
+
+import Header from '../Header/Header'
 
 const Layout = ({ children }) => {
     return (
-        <main>
+        <main className="Layout">
+            <Header />
             {children}
         </main>
     )
