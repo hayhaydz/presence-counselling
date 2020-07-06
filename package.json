@@ -16,9 +16,11 @@
   "dependencies": {
     "gatsby": "^2.23.12",
     "gatsby-plugin-sass": "^2.3.10",
+    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "swiper": "^6.0.0",
     "typeface-abril-fatface": "^0.0.72",
     "typeface-poppins": "^0.0.72"
   },

@@ -1,5 +1,7 @@
 body {
     background-color: #FAFAFA;
+    font-family: Poppins, sans-serif;
+    color: #212121;
 }
 
 .Layout {
@@ -21,19 +23,300 @@ body {
     align-items: center;
 
     &__left {
+        max-width: 50%;
+        margin-right: 50px;
+
         &--heading {
             font-family: Abril Fatface, serif;
-            font-size: 42px;
+            font-size: 66px;
             font-weight: 400;
             color: #101010;
+            margin-bottom: 50px;
+            letter-spacing: 0.01em;
     
             &--highlight {
                 color: #1E3EEA;
             }
         }
+
+        &--subheading {
+            font-weight: 300;
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+
+        &--link {
+            max-width: 90%;
+            display: block;
+            font-size: 20px;
+            font-weight: 500;
+            background-color: #1E3EEA;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+            border-radius: 100px;
+            text-decoration: none;
+            box-shadow: 10px 10px 15px rgba(30, 62, 234, 0.1);
+            box-sizing: border-box;
+            border: 5px solid transparent;
+            transition: 200ms ease;
+
+            &:first-of-type {
+                margin-bottom: 25px;
+            }
+
+            &:hover, &:focus {
+                border-color: #1E3EEA;
+                color: #1E3EEA;
+                background-color: #ffffff;
+                box-shadow: 10px 10px 15px rgba(30, 62, 234, 0.2);
+            }
+        }
+    }
+}
+
+.Blob {
+    width: 650px;
+    height: auto;
+}
+
+.Blocks {
+    &__heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1E3EEA;
+        margin-bottom: 25px;
+    }
+}
+
+.Block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    background-color: #FEFEFE;
+    border: 1px solid #F3F3F3;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 5px 40px 50px rgba(82, 82, 82, 0.05);
+    margin-bottom: 100px;
+
+    &:last-of-type {
+        margin: 0px;
+    }
+
+    &__img {
+        height: 100%;
+        display: inline-block;
+        border-radius: 30px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        color: #212121;
+        display: inline-block;
+        width: 50%;
+        margin-left: 50px;
+        line-height: 30px;
+    }
+
+    &:nth-of-type(even) {
+        justify-content: flex-end;
+
+        .Block__img {
+            order: 2;
+        }
+
+        .Block__text {
+            margin-left: 0px;
+            margin-right: 50px;
+        }
+    }
+}
+
+.About {
+    margin-top: 100px;
+
+    &__heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1E3EEA;
+        margin-bottom: 50px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &--img {
+            height: 300px;
+            border-radius: 100%;
+            border: 10px solid #1E3EEA;
+            box-shadow: 10px 25px 25px rgba(30, 62, 234, 0.1);
+        }
+
+        &--text {
+            font-size: 18px;
+            font-weight: 400;
+            max-width: 50%;
+            line-height: 30px;
+            margin: auto;
+        }
+    }
+}
+
+.Testimonials {
+    margin-top: 100px;
+
+    &__heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1E3EEA;
+        margin-bottom: 50px;
+    }
+}
+
+// Swiper
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFEFE;
+    border: 1px solid #F3F3F3;
+    box-shadow: 5px 10px 15px rgba(103, 103, 103, 0.05);
+    height: 200px !important;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.swiper-slide-text {
+    padding: 0px 25px;
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
+}
+
+.swiper-container {
+    padding-bottom: 50px !important;
+}
+
+.Details {
+    margin-top: 100px;
+
+    &__heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1E3EEA;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    &__subheading {
+        font-size: 24px;
+        font-weight: 600;
+        color: #101010;
+        margin-bottom: 15px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__left {
+        display: inline-block;
+        flex-basis: 100%;
+        flex: 1;
+        padding-right: 25px;
     }
 
     &__right {
+        display: inline-block;
+        flex-basis: 100%;
+        flex: 1;
+        padding-left: 25px;
+        border-left: 1px solid #E9E9E9;
+    }
 
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 50px;
+
+        &:last-of-type {
+            margin: 0px;
+        }
+    }
+}
+
+.Contact {
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+    &__heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1E3EEA;
+        margin-bottom: 25px;
+    }
+
+    &__subheading {
+        font-size: 24px;
+        font-weight: 600;
+        color: #101010;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        max-width: 80%;
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: #1E3EEA;
+        color: #ffffff;
+        text-align: center;
+        padding: 1em;
+        border-radius: 100px;
+        text-decoration: none;
+        box-shadow: 10px 10px 15px rgba(30, 62, 234, 0.1);
+        box-sizing: border-box;
+        border: 5px solid transparent;
+        transition: 200ms ease;
+
+        &:hover, &:focus {
+            border-color: #1E3EEA;
+            color: #1E3EEA;
+            background-color: #ffffff;
+            box-shadow: 10px 10px 15px rgba(30, 62, 234, 0.2);
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__column {
+        display: inline-block;
+        flex-basis: 100%;
+        flex: 1;
+
+        &:first-of-type {
+            padding-right: 25px;
+        }
+
+        &:last-of-type {
+            padding-left: 25px;
+        }
     }
 }
