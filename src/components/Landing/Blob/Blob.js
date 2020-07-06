@@ -1,5 +1,5 @@
 import React from 'react'
-import goldenFieldImg from "../../../img/golden-field.jpg"
+import goldenFieldImg from "../../../img/golden-field.JPG"
 
 const Blob = () => {
     return (

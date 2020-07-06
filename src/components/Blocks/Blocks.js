@@ -3,7 +3,7 @@ import React from "react"
 import Block from "./Block/Block"
 
 import BlueSkyGreenFieldImg from "../../img/blue-sky-green-field.jpg"
-import StonehengeImg from "../../img/stonehenge.jpg"
+import StonehengeImg from "../../img/stonehenge.JPG"
 import RunningWater from "../../img/running-water.jpg"
 import WoodlandPath from "../../img/woodland-path.jpg"
 import WaterfallWoodland from "../../img/waterfall-woodland.jpg"
