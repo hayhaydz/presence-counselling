@@ -14,14 +14,15 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@svgr/webpack": "^5.4.0",
+    "browser-monads": "^1.0.0",
     "gatsby": "^2.23.12",
+    "gatsby-plugin-offline": "^3.2.16",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "node-sass": "^4.14.1",
+    "nuka-carousel": "^4.7.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "swiper": "^6.0.0",
     "typeface-abril-fatface": "^0.0.72",
     "typeface-poppins": "^0.0.72"
   },

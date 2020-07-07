@@ -1,12 +1,40 @@
-import React from 'react'
-import SwiperCore, { Pagination } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import React, { useLayoutEffect, useState } from 'react'
+import { window } from 'browser-monads'
+import Carousel from 'nuka-carousel'
 
-import 'swiper/swiper-bundle.min.css';
-
-SwiperCore.use([Pagination])
 
 const Testimonials = () => {
+  let mediaQueryList = [window.matchMedia('(min-width: 960px)'), window.matchMedia('(max-width: 960px)'), window.matchMedia('(max-width: 520px)')]
+  const [slideNumber, setSlideNumber] = useState(3)
+
+  useLayoutEffect(() => {
+    const sizeChange = () => {
+      if(mediaQueryList[0].matches) {
+        if(slideNumber !== 3) {
+          setSlideNumber(3)
+        }
+      }
+
+      if(mediaQueryList[1].matches) {
+        if(slideNumber !== 2) {
+          setSlideNumber(2)
+        } 
+      } 
+
+      if(mediaQueryList[2].matches) {
+        setSlideNumber(1)
+      }
+    }
+    
+    window.addEventListener('resize', sizeChange)
+    sizeChange()
+    return () => window.removeEventListener('resize', sizeChange)
+  }, [])
+
+  const params = {
+    cellSpacing: 25,
+    wrapAround: true,
+  }
   const testimonials = [
     '"Thank you for always listening to me. I never say it, but thank you. You\'ve helped me in more ways than you will ever know. Thank you for listening and understanding me and for always being there for me." M',
     '"It really felt like you understood everything I said and I’ve not had that before. It made it easier to talk. Thanks for being real." T',
@@ -15,31 +43,20 @@ const Testimonials = () => {
     '"Susie has the wonderful, and not so common, ability to ‘see’ you and ‘hear’ you like very few others I know. I have known Susie and been a part of her work for a number of years now and have every confidence in her extraordinary skills as a counsellor."',
     '"When I think of Susie the three words that come to mind summing her up are nurturing, perceptive and gifted." AJ'
   ]
+
   return (
     <section className="Testimonials">
         <h1 className="Testimonials__heading">What people have had to say about me.</h1>
-        <Swiper
-            spaceBetween={25}
-            slidesPerView={3}
-            pagination={{ clickable: true }}
-            loop={true}
-            grabCursor={true}
-            breakpoints={{
-              1100: {
-                slidesPerView: 3
-              },
-              770: {
-                slidesPerView: 2
-              },
-              320: {
-                slidesPerView: 1
-              }
-            }}
+        <Carousel 
+          {...params}
+          renderCenterLeftControls={null}
+          renderCenterRightControls={null}
+          slidesToShow={slideNumber}
         >
             {testimonials.map((testimonial, index) => {
-                return <SwiperSlide key={index}><p className="swiper-slide-text">{testimonial}</p></SwiperSlide>
+              return <div key={index} ><p className="slider-slide-text">{testimonial}</p></div>
             })}
-        </Swiper>
+        </Carousel>
     </section>
   )
 }
