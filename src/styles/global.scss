@@ -17,9 +17,9 @@ body {
 }
 
 .Landing {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     &__left {
@@ -28,11 +28,12 @@ body {
 
         &--heading {
             font-family: Abril Fatface, serif;
-            font-size: 66px;
+            font-size: 76px;
             font-weight: 400;
             color: #101010;
             margin-bottom: 50px;
             letter-spacing: 0.01em;
+            line-height: 1.2em;
     
             &--highlight {
                 color: #1E3EEA;
@@ -76,7 +77,14 @@ body {
     }
 }
 
-.Blob {
+.Blob__mobile {
+    width: 90%;
+    height: auto;
+    display: none;
+}
+
+.Blob__desktop {
+    display: block;
     width: 650px;
     height: auto;
 }
@@ -318,5 +326,44 @@ body {
         &:last-of-type {
             padding-left: 25px;
         }
+    }
+}
+
+// Media Queries
+
+@media(max-width: 1330px) {
+    .Layout {
+        margin: 0px 25px;
+    }
+
+    .Landing {
+
+        &__left {
+            margin-right: 25px;
+
+            &--heading {
+                font-size: 42px;
+            }
+
+            &--link {
+                font-size: 18px;
+                max-width: 100%;
+            }
+        }
+    }
+    .Blob__desktop {
+        width: 450px;
+    }
+}
+
+@media(max-width: 770px) {
+    .Landing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Blob__desktop {
+        display: none;
     }
 }

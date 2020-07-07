@@ -1,7 +1,7 @@
 import React from 'react'
-import goldenFieldImg from "../../../img/golden-field.JPG"
+import goldenFieldImg from "../../../img/golden-field.jpg"
 
-const Blob = () => {
+const Blob = ({ className }) => {
     return (
         <svg
           width="763"
@@ -10,7 +10,7 @@ const Blob = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           xlink="http://www.w3.org/1999/xlink"
-          className="Blob"
+          className={className}
         >
           <g filter="url(#filter0_d)">
             <path
@@ -22,7 +22,7 @@ const Blob = () => {
           </g>
           <mask
             id="mask0"
-            maskType="alpha"
+            // maskType="alpha"
             maskUnits="userSpaceOnUse"
             x="15"
             y="9"
@@ -55,7 +55,7 @@ const Blob = () => {
               filterUnits="userSpaceOnUse"
               colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"

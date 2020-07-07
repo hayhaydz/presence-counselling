@@ -23,6 +23,7 @@ const Testimonials = () => {
             slidesPerView={3}
             pagination={{ clickable: true }}
             loop={true}
+            grabCursor={true}
         >
             {testimonials.map((testimonial, index) => {
                 return <SwiperSlide key={index}><p className="swiper-slide-text">{testimonial}</p></SwiperSlide>
