@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 
     &__left {
         max-width: 50%;
@@ -77,14 +78,7 @@ body {
     }
 }
 
-.Blob__mobile {
-    width: 90%;
-    height: auto;
-    display: none;
-}
-
-.Blob__desktop {
-    display: block;
+.Blob {
     width: 650px;
     height: auto;
 }
@@ -199,6 +193,7 @@ body {
     height: 200px !important;
     border-radius: 25px;
     box-sizing: border-box;
+    line-height: 1.3em;
 }
 
 .swiper-slide-text {
@@ -351,19 +346,216 @@ body {
             }
         }
     }
-    .Blob__desktop {
+    .Blob {
         width: 450px;
+    }
+
+    .Contact {
+        &__link {
+            max-width: 100%;
+        }
     }
 }
 
-@media(max-width: 770px) {
+@media(max-width: 950px) {
+    .Block {
+        flex-direction: column;
+        height: auto;
+
+        &__img {
+            width: 100%;
+            height: auto;
+
+
+        }
+
+        &__text {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 50px;
+        }
+
+        &:nth-of-type(even) {
+            justify-content: flex-start;
+    
+            .Block__img {
+                order: 0;
+            }
+    
+            .Block__text {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media(max-width: 860px) {
     .Landing {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        &__left {
+            max-width: 75%;
+
+            &--heading {
+                margin-bottom: 25px;
+            }
+
+            &--link {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 770px) {
+    .About__container {
+        flex-direction: column;
+
+        &--text {
+            margin-top: 50px;
+            max-width: 75%;
+        }        
+    }
+}
+
+@media(max-width: 720px) {
+    .Contact {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__column {
+            width: 100%;
+
+            &:first-of-type {
+                margin-bottom: 25px;
+            }
+
+            &:last-of-type {
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+@media(max-width: 520px) {
+    .Landing {
+        &__left {
+            max-width: 100%;
+        }
     }
 
-    .Blob__desktop {
-        display: none;
+    .About__container {
+        &--text {
+            max-width: 100%;
+        }
+    }
+
+    .Block {
+        margin-bottom: 50px;
+    }
+
+    .Details {
+
+        &__left {
+            padding-right: 0px;
+            margin-bottom: 100px;
+        }
+
+        &__right {
+            padding-left: 0px;
+            border: none;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__text {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .Blob {
+        width: 320px;
+    }
+
+    .Landing {
+        &__left {
+            &--link {
+                font-size: 14px;
+                padding: 0.5em;
+
+                &:first-of-type {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .Contact {
+        &__link {
+            font-size: 14px;
+            padding: 0.5em;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 430px) {
+    .swiper-slide {
+        height: 300px !important;
+    }
+}
+
+@media(max-width: 320px) {
+    .Layout {
+        max-width: 95%;
+    }
+
+    .Landing {
+        &__left {
+            &--heading {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .Block {
+        padding: 15px;
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 15px;
+        }
+    }
+
+    .About {
+        &__container {
+            &--img {
+                width: 250px;
+                height: auto;
+            }
+
+            &--text {
+                font-size: 16px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .Details {
+        &__left {
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
     }
 }

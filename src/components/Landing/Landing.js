@@ -1,6 +1,5 @@
 import React from "react"
-// import Blob from './Blob/Blob'
-import { ReactComponent as Blob } from '../../img/blob.svg'
+import Blob from './Blob/Blob'
 
 const Landing = () => {
   return (
@@ -11,7 +10,6 @@ const Landing = () => {
           <span className="Landing__left--heading--highlight">presence</span> in
           your time of need
         </h1>
-        {/* <Blob className="Blob__mobile" /> */}
         <p className="Landing__left--subheading">Feel free to contact me here</p>
         <a
           href="mailto:office@presencecounselling.co.uk"
@@ -29,8 +27,7 @@ const Landing = () => {
         </a>
       </div>
       <div className="Landing__right">
-        <Blob />
-        {/* <Blob className="Blob__desktop" /> */}
+        <Blob classes="Blob" />
       </div>
     </section>
   )

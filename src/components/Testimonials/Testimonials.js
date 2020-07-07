@@ -24,6 +24,17 @@ const Testimonials = () => {
             pagination={{ clickable: true }}
             loop={true}
             grabCursor={true}
+            breakpoints={{
+              1100: {
+                slidesPerView: 3
+              },
+              770: {
+                slidesPerView: 2
+              },
+              320: {
+                slidesPerView: 1
+              }
+            }}
         >
             {testimonials.map((testimonial, index) => {
                 return <SwiperSlide key={index}><p className="swiper-slide-text">{testimonial}</p></SwiperSlide>
