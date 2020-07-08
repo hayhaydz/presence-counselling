@@ -20,7 +20,7 @@ const Blocks = () => {
       <Block
         img={StonehengeImg}
         alt="Large boulder in the foreground with stonehenge in the distance behind"
-        text="I can offer a safe presence in your time of need. I’m a warm and emphatic listener able to offer hope and interested in accompanying you through whatever issue you face. I like to work with you as a whole person; often strong emotions stem from something that has happened to you."
+        text="I can offer a safe presence in your time of need. I’m a warm and empathic listener able to offer hope and interested in accompanying you through whatever issue you face. I like to work with you as a whole person; often strong emotions stem from something that has happened to you."
       />
       <Block
         img={RunningWater}

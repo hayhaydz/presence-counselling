@@ -455,6 +455,10 @@ body {
 
     .Details {
 
+        &__heading {
+            text-align: left;
+        }
+
         &__left {
             padding-right: 0px;
             margin-bottom: 100px;
@@ -484,7 +488,7 @@ body {
         &__left {
             &--link {
                 font-size: 14px;
-                padding: 0.5em;
+                padding: 1em 0.5em;
 
                 &:first-of-type {
                     margin-bottom: 10px;
@@ -494,9 +498,13 @@ body {
     }
 
     .Contact {
+        &__subheading {
+            margin-bottom: 10px;
+        }
+
         &__link {
             font-size: 14px;
-            padding: 0.5em;
+            padding: 1em 0.5em;
             width: 100%;
         }
     }

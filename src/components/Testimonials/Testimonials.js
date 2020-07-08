@@ -9,20 +9,18 @@ const Testimonials = () => {
 
   useLayoutEffect(() => {
     const sizeChange = () => {
-      if(mediaQueryList[0].matches) {
-        if(slideNumber !== 3) {
-          setSlideNumber(3)
-        }
-      }
+      
 
       if(mediaQueryList[1].matches) {
-        if(slideNumber !== 2) {
-          setSlideNumber(2)
-        } 
+        setSlideNumber(2)
       } 
 
       if(mediaQueryList[2].matches) {
         setSlideNumber(1)
+      }
+
+      if(mediaQueryList[0].matches) {
+        setSlideNumber(3)
       }
     }
     
@@ -34,6 +32,7 @@ const Testimonials = () => {
   const params = {
     cellSpacing: 25,
     wrapAround: true,
+    autoplay: true,
   }
   const testimonials = [
     '"Thank you for always listening to me. I never say it, but thank you. You\'ve helped me in more ways than you will ever know. Thank you for listening and understanding me and for always being there for me." M',
