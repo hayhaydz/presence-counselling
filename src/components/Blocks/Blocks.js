@@ -31,12 +31,7 @@ const Blocks = () => {
       <Block
         img={WoodlandPath}
         alt=""
-        text="For over 20 years I have worked with adolescents in various contexts; from mediation between parents and young people who are at risk of homelessness due to relationship breakdown to emotional support (including substance addiction) and helping to lead a youth club."
-      />
-      <Block
-        img={WaterfallWoodland}
-        alt=""
-        text="I have 7 years of experience counselling adolescents. 3 and a half years face to face counselling in high schools. In addition I have 3 years counselling and emotional well being practitioner experience online (via live chat message and email support) with young people aged 12 to 23 years of age. I have been counselling adults for 5 years in a face to face setting."
+        text="For over 20 years I have worked with adolescents in various contexts:  As a mediator when they have been at risk of homelessness when the relationship between parent and young person has fractured. I have offered emotional support for young people aged 16-25 including for those struggling with substance addiction. I have 7 years counselling adolescents face to face and online. I have worked for 5 years counselling adults face to face."
       />
     </section>
   )
