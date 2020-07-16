@@ -5,7 +5,7 @@ import PortraitImg from '../../img/portrait.jpg'
 const About = () => {
   return (
     <section className="About">
-      <h1 className="About__heading">A bit about me.</h1>
+      <h1 className="About__heading">A bit about me</h1>
       <div className="About__container">
         <img src={PortraitImg} className="About__container--img" alt="Me" />
         <p className="About__container--text">

@@ -45,7 +45,7 @@ const Testimonials = () => {
 
   return (
     <section className="Testimonials">
-        <h1 className="Testimonials__heading">What people have had to say about me.</h1>
+        <h1 className="Testimonials__heading">What people have had to say about me</h1>
         <Carousel 
           {...params}
           renderCenterLeftControls={null}

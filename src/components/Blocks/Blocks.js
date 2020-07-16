@@ -27,7 +27,7 @@ const Blocks = () => {
         alt="Water rushing through a stream with trees either side forming a canopy"
         text="It’s so important you feel able to be yourself. I can help you discover who you truly are. Take the first step on your journey to freedom and wholeness. I am currently offering video counselling online, instant messaging and telephone counselling."
       />
-      <h1 className="Blocks__heading">My experience.</h1>
+      <h1 className="Blocks__heading">My experience</h1>
       <Block
         img={WoodlandPath}
         alt=""

@@ -3,7 +3,7 @@ import React from "react"
 const Details = () => {
   return (
     <section className="Details">
-      <h1 className="Details__heading">The Details.</h1>
+      <h1 className="Details__heading">The Details</h1>
       <div className="Details__container">
         <div className="Details__left">
           <h3 className="Details__subheading">What is counselling?</h3>
@@ -31,6 +31,7 @@ const Details = () => {
             Sessions are 50 minutes usually weekly initially and payment by BACS
             is required prior to each session please.
           </p>
+          <p className="Details__text">Cost per session is £40</p>
         </div>
       </div>
     </section>
