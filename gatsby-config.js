@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Presence Counselling",
     description: "A safe presence in your time of need. Providing online counselling in Shrewsbury, Welshpool. For young people and adults.",
-    url: "presencecounselling.co.uk",
-    image: "/static/social_image.jpg" 
+    url: "https://presencecounselling.co.uk",
+    image: "/social_image.jpg" 
   },
   plugins: [
     {

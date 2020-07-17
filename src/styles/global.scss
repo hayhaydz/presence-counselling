@@ -320,6 +320,23 @@ body {
     }
 }
 
+// 404
+.NotFound {
+
+    &__heading {
+        font-weight: 700;
+        font-size: 42px;
+        color: #1E3EEA;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin-left: 50px;
+    }
+}
+
 // Media Queries
 
 @media(max-width: 1330px) {
