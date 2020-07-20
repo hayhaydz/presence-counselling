@@ -2,7 +2,7 @@ import React from "react"
 
 import PortraitImg from '../../img/portrait.jpg'
 import BACPLogo from '../../img/BACP-Logo.png'
-import FishImg from '../../img/Fish.png'
+import FishImg from '../../img/Fish.PNG'
 
 const About = () => {
   return (
