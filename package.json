@@ -16,6 +16,7 @@
   "dependencies": {
     "browser-monads": "^1.0.0",
     "gatsby": "^2.23.12",
+    "gatsby-cli": "^2.12.62",
     "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-offline": "^3.2.16",
     "gatsby-plugin-react-helmet": "^3.3.9",

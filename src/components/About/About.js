@@ -21,7 +21,7 @@ const About = () => {
           </p>
           <div className="About__container--images">
             <img src={BACPLogo} className="About__container--images--img" alt="BACP Details"/>
-            <img src={FishImg} className="About__container--images--img" alt="Christian symbol of life fish"/>
+            <img src={FishImg} className="About__container--images--img" alt="Christian symbol of life"/>
           </div>
         </div>
       </div>
