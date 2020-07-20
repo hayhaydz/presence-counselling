@@ -2,7 +2,7 @@ import React from "react"
 
 import PortraitImg from '../../img/portrait.jpg'
 import BACPLogo from '../../img/BACP-Logo.png'
-// import FishLogoImg from '../../img/Fish-Logo.png'
+import FishLogo from '../../img/Fish-Logo.png'
 
 const About = () => {
   return (
@@ -21,7 +21,7 @@ const About = () => {
           </p>
           <div className="About__container--images">
             <img src={BACPLogo} className="About__container--images--img" alt="BACP Details"/>
-            {/* <img src={FishImg} className="About__container--images--img" alt="Christian symbol of life"/> */}
+            <img src={FishLogo} className="About__container--images--img" alt="Christian symbol of life"/>
           </div>
         </div>
       </div>
