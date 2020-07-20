@@ -160,12 +160,30 @@ body {
             box-shadow: 10px 25px 25px rgba(30, 62, 234, 0.1);
         }
 
+        &--right {
+            max-width: 50%;
+            margin: auto;
+        }
+
         &--text {
             font-size: 18px;
             font-weight: 400;
-            max-width: 50%;
             line-height: 30px;
-            margin: auto;
+        }
+
+        &--images {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+
+            &--img {
+                width: 30%;
+                margin-right: 25px;
+                
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+            }
         }
     }
 }
@@ -426,10 +444,24 @@ body {
     .About__container {
         flex-direction: column;
 
-        &--text {
+        &--right {
             margin-top: 50px;
             max-width: 75%;
-        }        
+        }
+
+        &--images {
+            flex-direction: column;
+            
+            &--img {
+                width: 50%;
+                margin-right: 0px;
+                margin-bottom: 25px;
+
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+            }
+        }
     }
 }
 
@@ -560,6 +592,12 @@ body {
             &--text {
                 font-size: 16px;
                 margin-top: 25px;
+            }
+
+            &--images {
+                &--img {
+                    width: 100%;
+                }
             }
         }
     }

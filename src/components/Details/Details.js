@@ -29,9 +29,10 @@ const Details = () => {
           </p>
           <p className="Details__text">
             Sessions are 50 minutes usually weekly initially and payment by BACS
-            is required prior to each session please.
+            is required prior to each session.
           </p>
           <p className="Details__text">Cost per session is £40</p>
+          <p className="Details__text">I offer one <b>free</b> 20 minute telephone assessment.</p>
         </div>
       </div>
     </section>
