@@ -29,6 +29,7 @@ const SEO = () => {
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             {image && <meta name="twitter:image" content={image} />}
+            <meta name="google-site-verification" content="6ajigKAuZ5ZZ4M_srks_80JT-oX5cWSAcg4Rbv49SgM" />
         </Helmet>
     )
 }
