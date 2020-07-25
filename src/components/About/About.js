@@ -22,6 +22,7 @@ const About = () => {
           <div className="About__container--images">
             <img src={BACPLogo} className="About__container--images--img" alt="BACP Details"/>
             <img src={FishLogo} className="About__container--images--img" alt="Christian symbol of life"/>
+            <div dangerouslySetInnerHTML={{ __html: `<a href="https://www.psychologytoday.com/profile/770798" className="sx-verified-seal"></a><script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="13" data-id="770798" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="></script>`}} />
           </div>
         </div>
       </div>
