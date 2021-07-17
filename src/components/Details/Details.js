@@ -13,7 +13,7 @@ const Details = () => {
             acceptance in times of change.
           </p>
           <p className="Details__text">
-            As a trained professional I am able to offer you the opportunity to
+            As a trained and qualified professional I am able to offer you the opportunity to
             explore your thoughts and feelings in a safe, confidential place.
           </p>
         </div>
