@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import { JSONLD } from '../JSONLD/JSONLD';
+
 const SEO = () => {
     const { site } = useStaticQuery(query)
 
@@ -18,6 +20,21 @@ const SEO = () => {
             <link rel="canonical" href={url} />
             <meta name="description" content={description} />
             {image && <meta name="image" content={image} />}
+
+            <JSONLD>
+                {{
+                    '@context': 'https://schema.org',
+                    '@type': 'Psychiatric',
+                    url: 'https://presencecounselling.co.uk/',
+                    name: 'Presence Counselling',
+                    contactPoint: {
+                    '@type': 'ContactPoint',
+                    telephone: '+44-795-879-4265',
+                    email: 'office@presencecounselling.co.uk',
+                    contactType: 'Customer service',
+                    },
+                }}
+            </JSONLD>
 
             <meta property="og:url" content={url} />
             <meta property="og:type" content="article" />
