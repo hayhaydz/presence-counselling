@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { JSONLD } from '../JSONLD/JSONLD';
+import JSONLD from '../JSONLD/JSONLD';
 
 const SEO = () => {
     const { site } = useStaticQuery(query)
