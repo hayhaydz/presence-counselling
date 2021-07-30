@@ -9,8 +9,8 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
-    title: "Presence Counselling",
-    description: "A safe presence in your time of need. Providing online counselling in Shrewsbury, Welshpool. For young people and adults.",
+    title: "Presence Counselling and Psychotherapy // Shrewsbury and Welshpool",
+    description: "A safe presence in your time of need that provides online counselling in Shrewsbury and Welshpool for young people and adults.",
     url: "https://presencecounselling.co.uk",
     siteUrl: "https://presencecounselling.co.uk",
     image: "/social_image.jpg" 
